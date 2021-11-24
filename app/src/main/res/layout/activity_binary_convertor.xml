@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/binaryimg"
+    tools:context=".BinaryConvertorActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Binary Convertor"
+        android:textColor="@color/teal_700"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edInputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Enter String"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/buEncode"
+        app:layout_constraintStart_toStartOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buEncode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="25dp"
+        android:text="Encode"
+        app:layout_constraintBottom_toTopOf="@+id/binaryConverted"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buDecode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="60dp"
+        android:text="Decode"
+        app:layout_constraintEnd_toEndOf="@+id/binaryConverted"
+        app:layout_constraintTop_toBottomOf="@+id/edInputText" />
+
+    <TextView
+        android:id="@+id/binaryConverted"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="213dp"
+        android:text=""
+        android:textColor="@color/teal_700"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <Button
+            android:id="@+id/buCalc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculator" />
+
+        <Button
+            android:id="@+id/buAgeCalc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age Calculator" />
+
+        <Button
+            android:id="@+id/buCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Binary Convertor" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
